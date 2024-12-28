@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "omnirom",
+    "repository": "android_vendor_omni",
+    "target_path": "vendor/omni",
+    "branch": "android-11"
+  },
+  {
+    "remote": "TeamWin",
+    "repository": "android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "branch": "android-11"
+  },
+  {
+    "remote": "LineageOS",
+    "repository": "android_kernel_lge_sm8150",
+    "target_path": "kernel/lge/sm8150",
+    "branch": "lineage-18.1"
+  }
+]
