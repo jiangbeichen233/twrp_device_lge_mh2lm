@@ -1,11 +1,6 @@
-#
-# Copyright (C) 2024 The Android Open Source Project
-# Copyright (C) 2024 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-
+# device/lge/mh2lm/device.mk
 LOCAL_PATH := device/lge/mh2lm
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -16,13 +11,11 @@ AB_OTA_POSTINSTALL_CONFIG += \
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
-
-PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0-service \
     bootctrl.msmnile
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.msmnile \
+# 移除 PRODUCT_STATIC_BOOT_CONTROL_HAL，改为添加需要的包
+PRODUCT_PACKAGES += \
     libgptutils \
     libz \
     libcutils

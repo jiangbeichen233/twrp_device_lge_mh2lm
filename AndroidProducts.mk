@@ -5,6 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# device/lge/mh2lm/AndroidProducts.mk
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_mh2lm.mk
 
